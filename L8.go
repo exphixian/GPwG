@@ -8,8 +8,9 @@ import (
 	"fmt"
 )
 
-const lightspeed, secondsPerDay, distance = 299792, 86400, 236000000000000000
+const lightspeed, secondsPerDay = 299792, 86400
+const dist = 236000000000000000
 
 func L8() {
-	fmt.Println(distance / (lightspeed * secondsPerDay * 365))
+	fmt.Println(dist / (lightspeed * secondsPerDay * 365))
 }

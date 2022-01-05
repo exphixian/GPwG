@@ -11,6 +11,6 @@ func L2() {
 
 	speed := distance / (28 * hoursPerDay)
 
-	fmt.Printf("You would need to travel %v km/h to reach Mars in 28 days.", speed)
+	fmt.Printf("You would need to travel %v km/h to reach Mars in 28 days.\n", speed)
 
 }

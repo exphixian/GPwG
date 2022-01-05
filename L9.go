@@ -6,7 +6,7 @@ import (
 )
 
 func L9() {
-	quote := "L fdph L vdz, L frqtxhuhg."
+	quote := "L fdph, L vdz, L frqtxhuhg."
 	fmt.Printf("Part 1 - decipher a Caesar cipher: %v\n", quote)
 
 	for i := 0; i < len(quote); i++ {

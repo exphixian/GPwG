@@ -5,24 +5,22 @@ import (
 	"math/rand"
 )
 
-const nickel, dime, quarter = .05, .1, .25
-
 func L6Alt() {
 	piggybank := 0.0
-	var totalnickels, totaldimes, totalquarters int = 0, 0, 0
+	nickels, dimes, quarters := 0, 0, 0
 	for piggybank <= 20 {
 		switch i := rand.Intn(3); i {
 		case 0:
-			piggybank += nickel
-			totalnickels++
+			piggybank += .05
+			nickels++
 		case 1:
-			piggybank += dime
-			totaldimes++
+			piggybank += .1
+			dimes++
 		case 2:
-			piggybank += quarter
-			totalquarters++
+			piggybank += .25
+			quarters++
 		}
-		fmt.Printf("You have %4.2f in your piggy bank - %v quarters, %v dimes, and %v nickels.\n", piggybank, totalquarters, totaldimes, totalnickels)
+		fmt.Printf("You have %4.2f in your piggy bank - %v quarters, %v dimes, and %v nickels.\n", piggybank, quarters, dimes, nickels)
 
 	}
 }
