@@ -6,7 +6,6 @@ import (
 )
 
 func L11Encrypt() {
-	// c > C = 32
 	plainText := "Your message goes here"
 	key := "GOLANG"
 

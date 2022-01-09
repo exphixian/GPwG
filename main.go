@@ -7,7 +7,7 @@ import (
 func main() {
 	lesson := ""
 	fmt.Println("Which lesson are you referring to?")
-	fmt.Println("Lessons 2 - 11 are currently included.")
+	fmt.Println("Lessons 2 - 12 are currently added.")
 	fmt.Scan(&lesson)
 
 	//test input
@@ -40,7 +40,11 @@ func main() {
 			L11Decrypt()
 		} else if part == "2" {
 			L11Encrypt()
+		} else {
+			fmt.Println("That is not a valid lesson. Ending program.")
 		}
+	case "12":
+		L12()
 	default:
 		fmt.Println("That is not a valid lesson. Ending program.")
 	}
