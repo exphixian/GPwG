@@ -7,7 +7,7 @@ import (
 func main() {
 	lesson := ""
 	fmt.Println("Which lesson are you referring to?")
-	fmt.Println("Lessons 2 - 12 are currently added.")
+	fmt.Println("Lessons 2 - 13 are currently added.")
 	fmt.Scan(&lesson)
 
 	//test input
@@ -45,6 +45,8 @@ func main() {
 		}
 	case "12":
 		L12()
+	case "13":
+		L13()
 	default:
 		fmt.Println("That is not a valid lesson. Ending program.")
 	}
