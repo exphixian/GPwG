@@ -29,7 +29,8 @@ func (f fahrenheit) kelvin() kelvin {
 	return f.celsius().kelvin()
 }
 
-type kelvin float64
+//uncomment below to use with main
+//type kelvin float64
 
 //converts K to C
 func (k kelvin) celsius() celsius {
