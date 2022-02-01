@@ -5,21 +5,16 @@ import (
 	"time"
 )
 
-//type celcius float64
 func c2f(c int) int {
 	return (c * 9 / 5) + 32
 }
 
-//type fahrenheit float64
 func f2c(f int) int {
 	return (f - 32) * 5 / 9
 }
 
-type swap func()
-
 func drawTable(tempType1 string, tempType2 string, function func(int) int) {
 	row := "================================="
-	//content := "|	%v	|	%v	|"
 	fmt.Println(row)
 	fmt.Printf("|	%v	|	%v	|\n", tempType1, tempType2)
 	fmt.Println(row)
@@ -28,7 +23,6 @@ func drawTable(tempType1 string, tempType2 string, function func(int) int) {
 		fmt.Printf("|	%v	|	%v	|\n", i, adjTemp)
 	}
 	fmt.Println(row)
-	//return func()
 
 }
 
